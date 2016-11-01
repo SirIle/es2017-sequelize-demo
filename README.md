@@ -14,6 +14,14 @@ scripts/init.sh
 The script will ask for a password when it's decrypting the Docker Datacenter
 Client bundle, you will receive the password from the instructors.
 
+I'll add the commands below as I explore how the script should work
+
+~~~bash
+wget https://get.docker.com/builds/Linux/x86_64/docker-1.11.0.tgz -O /tmp/docker-client.tgz
+tar xzf /tmp/docker-client.tgz
+sudo ln -s $PWD/docker/docker /usr/local/bin/docker
+~~~
+
 ## Things to do
 
 TODO:
