@@ -3,7 +3,7 @@
 ## Getting started
 
 Create a workspace and choose the Github project as the base. The project should
-be at `git@github.com:SirIle/es2017-sequelize-demo.git`.
+be at `https://github.com/SirIle/es2017-sequelize-demo.git`.
 
 To initialize the Cloud9 workspace run
 
