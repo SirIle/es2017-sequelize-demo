@@ -1,0 +1,27 @@
+{
+  "name": "es2017-sequelize-demo",
+  "version": "1.0.0",
+  "description": "The project used for Docker and Microservices workshop",
+  "main": "services/users/index.js",
+  "scripts": {
+    "start": "nodemon | bunyan",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "localdb": "NODE_ENV=development scripts/setup-db.sh",
+    "resetlocaldb": "NODE_ENV=development babel-node scripts/initdb.es6",
+    "container": "docker build -t taw-demo/users -f dockerfiles/Dockerfile.users .",
+    "startcontainer": "docker run -d -p 80:8080 --name demo --net sequelize taw-demo/users"
+
+  },
+  "author": "Ilkka Anttonen",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.11.1",
+    "sequelize": "^3.24.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-es2017": "^6.16.0",
+    "nodemon": "^1.11.0"
+  }
+}
