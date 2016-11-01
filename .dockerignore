@@ -5,3 +5,5 @@ testdata
 .git
 README.md
 dockerfiles
+.c9
+docker
