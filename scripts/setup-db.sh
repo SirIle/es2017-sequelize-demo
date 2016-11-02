@@ -2,8 +2,8 @@
 BASEDIR=$(dirname ${BASH_SOURCE[0]})/..
 
 # Start the database
-docker network create sequelize
-docker run -d -e MYSQL_ROOT_PASSWORD=demo -p 3306:3306 --network taw2016 --name mariadb mariadb
+docker network create taw2016
+docker run -d -e MYSQL_ROOT_PASSWORD=demo -p 3306:3306 --net taw2016 --name mariadb mariadb
 
 # Wait until the database is running
 while :
