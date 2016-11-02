@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "localdb": "NODE_ENV=development scripts/setup-db.sh",
     "resetlocaldb": "NODE_ENV=development babel-node scripts/initdb.es6",
-    "container": "cd services/users;npm install;cd ../..;docker build -t taw-demo/users -f dockerfiles/Dockerfile.users .",
+    "container": "docker build -t $C9_USER/users -f dockerfiles/Dockerfile.users .",
     "startcontainer": "docker run -d -p 80:8080 --name demo --net sequelize taw-demo/users"
 
   },
