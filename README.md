@@ -39,13 +39,13 @@ Running the container on DDC is done with
 npm run startcontainer
 ~~~
 
-Then it can be accessed from a url that's based on the C9 username, for example
+Then user your C9 username to access the application URL
 
 ~~~bash
-curl http://sirile-users.apps.containercluster.net/users/user1
+curl http://$C9_USER-users.apps.containercluster.net/users/user1
 ~~~
 
-Replace `sirile` with the correct Cloud9 user name.
+That can also be used in a browser, for example [http://sirile-users.apps.containercluster.net/users/user1](http://sirile-users.apps.containercluster.net/users/user1).
 
 ### Stopping the container
 
