@@ -35,6 +35,8 @@ if you want to force a rebuild, it can be done with
 
 ~~~bash
 npm run containers -- --build
+# or
+docker-compose build
 ~~~
 
 Then use your C9 username to access the application URL
@@ -87,3 +89,4 @@ and password can be found from *config/sequelize.json*.
 
 TODO:
 -   Figure out a good hands-on change to the application
+-   Add tests
