@@ -8,6 +8,7 @@ const log = bunyan.createLogger( { name: 'users', level: 'DEBUG' } )
 export function startServer() {
   // Create a restify server
   const server = restify.createServer()
+  server.use( restify.CORS() )
   // Define the endpoint
   server.get( '/users/:userid', (req, res, next) => {
     res.header('Host', os.hostname() ) // For scaling demonstration
