@@ -3,7 +3,7 @@
     "username": "root",
     "password": "demo",
     "database": "demo",
-    "host": "127.0.0.1",
+    "host": "db.containercluster.net",
     "port": 3306,
     "dialect": "mysql"
   },
