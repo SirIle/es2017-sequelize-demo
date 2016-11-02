@@ -47,6 +47,17 @@ curl http://sirile-users.apps.containercluster.net/users/user1
 
 Replace `sirile` with the correct Cloud9 user name.
 
+### Stopping the container
+
+The user specific container can be stopped with
+
+~~~bash
+npm run stopcontainer
+~~~
+
+The command also removes the container so that rebuilding and restarting is
+easy.
+
 ## Setting up the database
 
 This needs to be done only once as the participants are sharing the same
