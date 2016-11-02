@@ -9,7 +9,7 @@
     "db": "NODE_ENV=development scripts/setup-db.sh",
     "resetdb": "NODE_ENV=development babel-node scripts/initdb.es6",
     "container": "docker build -t $C9_USER/users -f dockerfiles/Dockerfile.users .",
-    "startcontainer": "docker run -d -e interlock.hostname=$C9_USER-users -e interlock.domain=apps.containercluster.net -p 8080 --name $C9_USER-users --net taw2016 $C9_USER/users"
+    "startcontainer": "docker run -d -l interlock.hostname=$C9_USER-users -l interlock.domain=apps.containercluster.net -p 8080 --name $C9_USER-users --net taw2016 $C9_USER/users"
   },
   "author": "Ilkka Anttonen",
   "license": "ISC",
