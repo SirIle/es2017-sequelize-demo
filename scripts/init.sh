@@ -4,6 +4,4 @@ tar xzf /tmp/docker-client.tgz
 sudo ln -s $PWD/docker/docker /usr/local/bin/docker
 cd files && unzip ucp-bundle.zip && eval $(<env.sh) && cd ..
 npm update -g npm
-cd ~/workspace
-npm install
-cd services/users && npm install
+npm install && cd services/users && npm install && cd ../..
