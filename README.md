@@ -25,38 +25,43 @@ should see some running containers listed.
 
 ## Building the example application
 
-Building the container out of the application is done with
+Building the container and running it is done with
 
 ~~~bash
-npm run container
+npm run containers
 ~~~
 
-## Running the container and testing it
-
-Running the container on DDC is done with
+if you want to force a rebuild, it can be done with
 
 ~~~bash
-npm run startcontainer
+npm run containers -- --build
 ~~~
 
-Then user your C9 username to access the application URL
+Then use your C9 username to access the application URL
 
 ~~~bash
-curl http://$C9_USER-users.apps.containercluster.net/users/user1
+curl -i http://$C9_USER-users.apps.containercluster.net/users/user1
 ~~~
 
 That can also be used in a browser, for example [http://sirile-users.apps.containercluster.net/users/user1](http://sirile-users.apps.containercluster.net/users/user1).
 
-### Stopping the container
+## Scaling the number of containers
 
-The user specific container can be stopped with
+Scaling the containers can be done with
 
 ~~~bash
-npm run stopcontainer
+npm run scale users=3
 ~~~
 
-The command also removes the container so that rebuilding and restarting is
-easy.
+### Stopping the containers
+
+Containers can be stopped with
+
+~~~bash
+npm stop
+~~~
+
+The command also removes the containers.
 
 ## Setting up the database
 
