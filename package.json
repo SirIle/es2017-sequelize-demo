@@ -8,9 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "db": "NODE_ENV=development scripts/setup-db.sh",
     "resetdb": "NODE_ENV=development babel-node scripts/initdb.es6",
-    "container": "docker build -t $C9_USER/users -f dockerfiles/Dockerfile.users .",
-    "startcontainer": "docker run -d -l interlock.hostname=$C9_USER-users -l interlock.domain=apps.containercluster.net -p 8080 --name $C9_USER-users --net taw2016 $C9_USER/users",
-    "stopcontainer": "docker rm -f $C9_USER-users"
+    "containers": "docker-compose -p $C9_USER up -d",
+    "stop": "docker-compose -p $C9_USER down",
+    "scale": "docker-compose -p $C9_USER scale"
   },
   "author": "Ilkka Anttonen",
   "license": "ISC",

@@ -1,0 +1,17 @@
+version: '2'
+services:
+  users:
+    image: ${C9_USER}/users
+    build:
+      context: .
+      dockerfile: dockerfiles/Dockerfile.users
+    labels:
+      - "interlock.hostname=${C9_USER}-users"
+      - "interlock.domain=apps.containercluster.net"
+    ports:
+      - "8080"
+    networks:
+      - taw2016
+networks:
+  taw2016:
+    external: true
