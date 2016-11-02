@@ -14,7 +14,14 @@ scripts/init.sh
 The script will ask for a password when it's decrypting the Docker Datacenter
 Client bundle, you will receive the password from the instructors.
 
-After this try `docker ps` to check that the connection to Datacenter works.
+After that the Docker environment needs to be set in the shell, do that with
+
+~~~bash
+cd files && eval $(<env.sh) && cd ..
+~~~
+
+Then try `docker ps` to check that the connection to Datacenter works. You
+should see some running containers listed.
 
 ## Things to do
 
