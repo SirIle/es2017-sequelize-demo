@@ -65,6 +65,14 @@ npm stop
 
 The command also removes the containers.
 
+## Running tests
+
+Chai and mocha based tests can be run with
+
+~~~bash
+npm test
+~~~
+
 ## Setting up the database
 
 This needs to be done only once as the participants are sharing the same
