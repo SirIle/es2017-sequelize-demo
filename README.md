@@ -108,4 +108,3 @@ and password can be found from *config/sequelize.json*.
 
 TODO:
 -   Figure out a good hands-on change to the application
--   Add tests
