@@ -6,6 +6,7 @@
   "scripts": {
     "start": "nodemon | bunyan",
     "test": "mocha",
+    "coverage": "node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha -- --compilers js:babel-core/register --colors --reporter dot test/*.es6",
     "db": "NODE_ENV=development scripts/setup-db.sh",
     "resetdb": "NODE_ENV=development babel-node scripts/initdb.es6",
     "containers": "docker-compose -p $C9_USER up -d",
@@ -24,6 +25,7 @@
     "babel-preset-es2017": "^6.16.0",
     "bunyan": "^1.8.4",
     "chai": "^3.5.0",
+    "istanbul": "^1.1.0-alpha.1",
     "mocha": "^3.1.2",
     "nodemon": "^1.11.0",
     "restify": "^4.2.0",
