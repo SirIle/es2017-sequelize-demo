@@ -73,6 +73,17 @@ Chai and mocha based tests can be run with
 npm test
 ~~~
 
+## Running test line coverage
+
+The test line coverage reports can be run with
+
+~~~bash
+npm run coverage
+~~~
+
+After that the reports can be found from under *coverage/lcov-report* folder,
+open the *index.html* with a browser/preview.
+
 ## Setting up the database
 
 This needs to be done only once as the participants are sharing the same
