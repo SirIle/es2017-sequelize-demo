@@ -84,6 +84,24 @@ npm run coverage
 After that the reports can be found from under *coverage/lcov-report* folder,
 open the *index.html* with a browser/preview.
 
+## Hands on exercises
+
+### Code coverage
+
+Run and check the code coverage. Check what isn't covered in the *users* service
+and add a test for the missing functionality to increase the coverage.
+
+### New field in the database
+
+During the exercise a new field is introduced into the database. Add the field
+to the model and ensure that the information is correctly relayed to the caller.
+
+### Implement a new endpoint
+
+A new requirement from the client arrives and they need to be able to query
+users based on the first name. Add a new endpoint and functionality for the
+functionality. Don't forget the tests.
+
 ## Setting up the database
 
 This needs to be done only once as the participants are sharing the same
@@ -103,8 +121,3 @@ npm run resetdb
 
 Also a tool like Sequel Pro can be used to connect to the database. The userid
 and password can be found from *config/sequelize.json*.
-
-## Things to do
-
-TODO:
--   Figure out a good hands-on change to the application
