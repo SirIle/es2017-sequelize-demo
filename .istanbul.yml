@@ -1,2 +1,2 @@
 instrumentation:
-  extensions: ['.es6']
+  extensions: ['.es6','.js']
