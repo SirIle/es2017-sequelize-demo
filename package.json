@@ -5,8 +5,10 @@
   "main": "services/users/index.js",
   "scripts": {
     "start": "nodemon | bunyan",
+    "build": "docker-compose -p $C9_USER build",
     "test": "mocha",
     "coverage": "node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha -- --compilers js:babel-core/register --colors --reporter dot test/*.es6",
+    "testwatch": "mocha --no-exit --watch --reporter min test/02-test-users.es6",
     "db": "NODE_ENV=development scripts/setup-db.sh",
     "resetdb": "NODE_ENV=development babel-node scripts/initdb.es6",
     "containers": "docker-compose -p $C9_USER up -d",
