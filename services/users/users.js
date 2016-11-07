@@ -20,7 +20,7 @@ export function startServer() {
         next()
       })
   })
-  server.listen( 8080, () =>
+  server.listen( process.env.PORT || 8080, process.env.IP || "0.0.0.0", () =>
     log.info( '%s listening at %s', server.name, server.url )
   )
 }
