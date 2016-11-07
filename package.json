@@ -11,7 +11,7 @@
     "testwatch": "mocha --no-exit --watch --reporter min test/02-test-users.es6",
     "db": "NODE_ENV=development scripts/setup-db.sh",
     "resetdb": "NODE_ENV=development babel-node scripts/initdb.es6",
-    "containers": "docker-compose -p $C9_USER up -d",
+    "containers": "docker-compose -p $C9_USER up -d && echo Click here to load an example endpoint: http://$C9_USER-users.apps.containercluster.net/users/user1",
     "stop": "docker-compose -p $C9_USER down",
     "scale": "docker-compose -p $C9_USER scale"
   },
