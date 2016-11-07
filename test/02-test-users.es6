@@ -17,7 +17,9 @@ describe('if the user exists', () => {
 
 describe('if the user does not exist', () => {
   it('returns http statuscode 404', (done) => {
-    // Something seems to be missing here
-    done()
+    client.get('/users/notfound', (err, req, res, obj) => {
+      res.statusCode.should.equal(404)
+      done()
+    })
   })
 })
