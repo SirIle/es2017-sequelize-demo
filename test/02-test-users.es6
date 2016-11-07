@@ -18,5 +18,6 @@ describe('if the user exists', () => {
 describe('if the user does not exist', () => {
   it('returns http statuscode 404', (done) => {
     // Something seems to be missing here
+    done()
   })
 })
