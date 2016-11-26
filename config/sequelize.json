@@ -14,6 +14,13 @@
     "host": "mariadb",
     "dialect": "mysql"
   },
+  "local": {
+    "username": "root",
+    "password": "ile",
+    "database": "ile",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
   "production": {
     "username": "root",
     "password": null,
