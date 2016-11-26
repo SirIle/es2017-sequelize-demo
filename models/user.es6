@@ -3,7 +3,8 @@ export default function (sequelize, DataTypes) {
     userid: { type: DataTypes.STRING, unique: true },
     firstname: { type: DataTypes.STRING },
     lastname: { type: DataTypes.STRING },
-    age: { type: DataTypes.INTEGER, validate: { min: 0, max: 100 }}
+    age: { type: DataTypes.INTEGER, validate: { min: 0, max: 100 }},
+    nickname: { type: DataTypes.STRING }
   },{
     classMethods: {
       associate: (models) => {
